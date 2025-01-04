@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="logoContent">
+            <a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+            <h1 class="logoName">Cintia flower shop</h1>
+        </div>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="blogs.html">Blogs</a>
+        </nav>
+        <div class="icon">
+            <i class="fas fa-search" id="search"></i>
+            <i class="fas fa-bars" id="menu-bar"></i>
+        </div>
+        <div class="search">
+            <input type="search" placeholder="cari...">
+        </div>
+    </header>
+    <section class="product" id="product">
+        <div class="heading">
+            <h2>Produk Kami</h2>
+        </div>
+        <div class="swiper product-row">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/flow1.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Tulip</h3>
+                        <p>Bunga sederhana namun elegan, melambangkan cinta dan kebahagiaan, tersedia dalam warna-warna cerah.</p>
+                        <p class="price">Rp45.000</p>
+                        <div class="orderNow">
+                            <button onclick="orderNow('Tulip', 45000)">Pesan Sekarang</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/flow2.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Mawar</h3>
+                        <p>Simbol cinta dan romansa, tersedia dalam berbagai warna dengan makna berbeda seperti persahabatan.</p>
+                        <p class="price">Rp10.000</p>
+                        <div class="orderNow">
+                            <button onclick="orderNow('Mawar', 10000)">Pesan Sekarang</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/flow3.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Lili</h3>
+                        <p>Warna putih yang elegan dan harum, melambangkan kemurnian dan kecantikan, ideal untuk acara formal.</p>
+                        <p class="price">Rp50.000</p>
+                        <div class="orderNow">
+                            <button onclick="orderNow('Lili', 50000)">Pesan Sekarang</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/flow4.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Anyelir</h3>
+                        <p>Simbol cinta dan kekaguman, tahan lama dengan kelopak berlapis dalam warna-warna cerah.</p>
+                        <p class="price">Rp25.000</p>
+                        <div class="orderNow">
+                            <button onclick="orderNow('Anyelir', 25000)">Pesan Sekarang</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper product-row">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/flow5.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Gerbera</h3>
+                        <p>Bunga ceria dan berwarna-warni yang melambangkan kebahagiaan dan energi positif.</p>
+                        <p class="price">Rp23.000</p>
+                        <div class="orderNow">
+                            <button onclick="orderNow('Gerbera', 23000)">Pesan Sekarang</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/flow6.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Anggrek</h3>
+                        <p>Bunga eksotis yang melambangkan keanggunan dan cinta abadi, sempurna untuk hadiah istimewa.</p>
+                        <p class="price">Rp30.000</p>
+                        <div class="orderNow">
+                            <button onclick="orderNow('Anggrek', 30000)">Pesan Sekarang</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/flow7.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Krisan</h3>
+                        <p>Melambangkan kejujuran dan rasa syukur, ideal untuk dekorasi atau ucapan terima kasih.</p>
+                        <p class="price">Rp15.000</p>
+                        <div class="orderNow">
+                            <button onclick="orderNow('Krisan', 15000)">Pesan Sekarang</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/flow8.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Gypsophila</h3>
+                        <p>Bunga kecil putih melambangkan kemurnian untuk rangkaian bunga putih yang indah dan manis.</p>
+                        <p class="price">Rp10.000</p>
+                        <div class="orderNow">
+                            <button onclick="orderNow('Gypsophila', 10000)">Pesan Sekarang</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/flow9.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Daisy Butter</h3>
+                        <p>Bunga kecil putih melambangkan kemurnian untuk rangkaian bunga yang disusun rapi dan indah.</p>
+                        <p class="price">Rp12.000</p>
+                        <div class="orderNow">
+                            <button onclick="orderNow('Daisy Butter', 12000)">Pesan Sekarang</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/flow10.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Baby Breath</h3>
+                        <p>Bunga kecil putih melambangkan kemurnian untuk rangkaian bunga yang indah dengan warna yang indah.</p>
+                        <p class="price">Rp15.000</p>
+                        <div class="orderNow">
+                            <button onclick="orderNow('Baby Breath', 15000)">Pesan Sekarang</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <footer>
+        <div class="box">
+            <h3>Tautan Cepat</h3>
+            <a href="index.html"><i class="fas fa-arrow-right"></i>Beranda</a>
+            <a href="products.html"><i class="fas fa-arrow-right"></i>Produk</a>
+            <a href="blogs.html"><i class="fas fa-arrow-right"></i>Blog</a>
+        </div>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="index.js"></script>
+        <script>
+            function orderNow(flower, price) {
+                const quantity = prompt(`Masukkan jumlah ${flower} yang ingin Anda pesan:`);
+                if (quantity && !isNaN(quantity) && quantity > 0) {
+                    alert(`Anda telah berhasil memesan ${quantity} ${flower} seharga Rp${(price * quantity).toLocaleString('id-ID')}.`);
+                } else {
+                    alert('Jumlah yang dimasukkan tidak valid.');
+                }
+            }
+        </script>
+    </body>
+</html>
